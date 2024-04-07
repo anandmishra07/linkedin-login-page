@@ -131,3 +131,34 @@ footer ul li {
     background: #000;
     font-size: 15px;
 }
+
+@media (max-width: 600px) {
+
+
+	.container { 
+		width: 320px; 
+		height: 480px; 
+		background: #fff; 
+		box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7); 
+		border-radius: 7px; 
+		display: flex; 
+		flex-direction: column; 
+		justify-content: space-evenly; 
+		padding: 1rem; 
+		margin-left: 10%;
+	} 
+
+	footer ul {
+		display: flex;
+		justify-content:space-between;
+		line-height: 20px;
+		margin: 5px;
+	}
+	
+	footer ul li {
+		list-style: none;
+		padding: 1px;
+		color: #000;
+		font-size: 8px;
+	}
+}
