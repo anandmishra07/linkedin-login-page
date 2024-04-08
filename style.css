@@ -5,6 +5,9 @@
 	padding: 0; 
 } 
 
+body{
+	font-family: "Roboto", sans-serif;
+}
 .logo img{
 	display: inline-block;
 	width: 100px;
@@ -36,45 +39,55 @@
 	margin-bottom: 0.7em; 
 } 
 
-.your-input input{ 
-	width: 100%; 
-	height: 50px; 
-	padding-top: 1.1rem; 
-	padding-left: 9px; 
-	outline: none; 
-	border: 1px solid #8c8c8c; 
-	border-radius: 3px; 
-	transition: .2s; 
-} 
 
-.your-input label { 
-	position: absolute; 
-	top: 30%; 
-	left: 10px; 
-	font-size: 1.1rem; 
-	color: #8c8c8c; 
-	transition: .2s; 
-} 
+#user,
+#password {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #626565;
+  border-radius: 5px;
+}
 
-.input input:focus ~ label, 
-.input input:valid ~ label{ 
-	top: 10%; 
-	font-size: .8rem; 
-	color: #000; 
-} 
+#user,
+#password::placeholder {
+  font-size: 1.1rem;
+}
 
-.input input:focus { 
-	border-width: 2px; 
-	border-color: #0A66C3; 
-} 
+#user {
+  margin-bottom: 15px;
+}
 
-.forgot-password-link { 
-	width: 180px; 
-	text-decoration: none; 
-	color: blue;
-} 
+#password {
+  margin-bottom: 13px;
+}
 
+.password-input {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
 
+#toggleBtn {
+  position: absolute;
+  top: 35%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0a66c3;
+  right: 15px;
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: #0a66c3;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
  button{ 
 	height: 50px; 
 	background: #0A66C3; 
@@ -101,6 +114,10 @@ text-align: center;
 	padding: .2rem; 
 } 
 
+.container-end{
+	display: flex;
+	justify-content: center;
+}
 
 .newOR hr{
 	display: inline-block;
@@ -121,6 +138,10 @@ footer ul li {
     font-size: 13px;
 }
 
+footer ul li #lang{
+	border: none;
+	outline: none;
+}
 .footer-black {
     color: #000;
     font-weight: 900;
@@ -139,7 +160,7 @@ footer ul li {
 		width: 320px; 
 		height: 480px; 
 		background: #fff; 
-	box-shadow: 0 8px 15px rgba(28, 25, 25, 0.7); 
+		box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7); 
 		border-radius: 7px; 
 		display: flex; 
 		flex-direction: column; 
@@ -160,5 +181,21 @@ footer ul li {
 		padding: 1px;
 		color: #000;
 		font-size: 8px;
+	}
+	.container-end{
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+
+	.join-link { 
+		margin-bottom: 30px;
+	}
+	
+	footer ul li #lang{
+		border: none;
+		outline: none;
+		font-size: 8px;
+		font-weight: 900;
 	}
 }
