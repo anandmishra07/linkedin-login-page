@@ -88,14 +88,20 @@ body{
   font-weight: bold;
   text-decoration: none;
 }
- button{ 
+.forgot-password-link{
+	text-decoration: none;
+	color: blue;
+}
+ button { 
 	height: 50px; 
 	background: #0A66C3; 
 	border-radius: 30px; 
 	font-size: 1rem; 
 	font-weight: bolder; 
-	color: black;
+	border: none;
+	color: white;
 } 
+
 
 .join-link { 
 	margin-top: 30px;
